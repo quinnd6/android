@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context="com.example.jsonlogin.LoginActivity"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+
+
+    <EditText
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User ID"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+
+
+
+    <EditText
+        android:layout_below="@+id/userid"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        />
+
+
+
+    <Button
+        android:layout_below="@+id/password"
+        android:id="@+id/login"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"
+        android:text="LOG IN"
+        />
+
+
+</RelativeLayout>

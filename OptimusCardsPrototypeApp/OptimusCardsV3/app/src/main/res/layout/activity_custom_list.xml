@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+    <ListView
+        android:id="@+id/lvTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/logout" />
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@android:color/white"
+        android:background="#80000f"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="List Of Transactions for" />
+
+
+
+    <Button
+        android:id="@+id/logout"
+        android:text ="Logout"
+
+
+        android:layout_alignParentRight="true"
+
+        android:layout_below="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        />
+
+
+</RelativeLayout>
