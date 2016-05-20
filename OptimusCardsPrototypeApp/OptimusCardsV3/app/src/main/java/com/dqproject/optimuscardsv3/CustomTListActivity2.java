@@ -53,23 +53,8 @@ public class CustomTListActivity2 extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(Color.WHITE);
         toolbar.setLogo(R.drawable.ocglogo);
-        //populateUsersList();
         displayTransactions();
     }
-
-    private void populateUsersList() {
-        // Construct the data source
-        ArrayList<Transaction> arrayOfTransactions = Transaction.getTransactions();
-        // Create the adapter to convert the array to views
-        CustomTransactionsAdapter adapter = new CustomTransactionsAdapter(this, arrayOfTransactions);
-        // Attach the adapter to a ListView
-        ListView listView = (ListView) findViewById(R.id.lvTransactions);
-
-        listView.setAdapter(adapter);
-    }
-
-
-
 
 
     //Method to try and display the json transaction data
